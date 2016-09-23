@@ -7,7 +7,8 @@ var data = {
   "wife": "6. Moses rescued the women from the shepherds and helped them draw water and had Zipporah as his wife. Exodus 2:16-21",
   "burningBush": "7. Burning Bush. Exodus 3",
   "aaron": "8. Moses and Aaron returns to Egypt to meet with Pharaoh. Exodus 4:29-31",
-  "hardLife": "9. Pharaoh made the lives of the Israelites harder and the Israelites blamed Moses for it. Exodus 5 (not sure if key event)"
+  "hardLife": "9. Pharaoh made the lives of the Israelites harder and the Israelites blamed Moses for it. Exodus 5",
+  "n" : ""
 }
 
 
@@ -15,27 +16,43 @@ var showDescription = function() {
   var p = document.querySelector('#data');
   if(this.classList.contains('killing')) {
     p.innerHTML = data.killing;
-    var n = document.createElement('p');
+    var n = document.querySelector('#n');
     n.innerHTML = data.nile;
-    document.querySelector('.description').appendChild(n);
   }
   if(this.classList.contains('moses')) {
     p.innerHTML = data.moses;
+    var n = document.querySelector('#n');
+    n.innerHTML = data.n;
   }
   if(this.classList.contains('found')) {
     p.innerHTML = data.found;
+    var n = document.querySelector('#n');
+    n.innerHTML = '';
+    n.innerHTML = data.n;
   }
   if(this.classList.contains('striking')) {
     p.innerHTML = data.striking;
+    var n = document.querySelector('#n');
+    n.innerHTML = '';
+    n.innerHTML = data.n;
   }
   if(this.classList.contains('wife')) {
     p.innerHTML = data.wife;
+    var n = document.querySelector('#n');
+    n.innerHTML = '';
+    n.innerHTML = data.n;
   }
   if(this.classList.contains('burningBush')) {
     p.innerHTML = data.burningBush;
+    var n = document.querySelector('#n');
+    n.innerHTML = '';
+    n.innerHTML = data.n;
   }
   if(this.classList.contains('hardLife')) {
     p.innerHTML = data.hardLife;
+    var n = document.querySelector('#n');
+    n.innerHTML = '';
+    n.innerHTML = data.n;
   }
 };
 var lM = document.querySelectorAll('.hint');
