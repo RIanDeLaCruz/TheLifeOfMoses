@@ -1,0 +1,29 @@
+.hint {
+  background-color: #FFF176CC;
+  background-opacity: 0.5;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.code {
+  width: 50%;
+}
+
+.description {
+  width: 30%;
+}
+
+.code, .description {
+}
+
+main {
+  display: flex;
+}
+
+.killing {
+  margin-bottom: 12px;
+}
+
+.burningBush {
+  margin-bottom: 12px;
+}
