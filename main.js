@@ -15,7 +15,9 @@ var showDescription = function() {
   var p = document.querySelector('#data');
   if(this.classList.contains('killing')) {
     p.innerHTML = data.killing;
-    p.innerHTML = data.nile;
+    var n = document.createElement('p');
+    n.innerHTML = data.nile;
+    document.querySelector('description').appendChild(n);
   }
   if(this.classList.contains('moses')) {
     p.innerHTML = data.moses;
