@@ -48,6 +48,12 @@ var showDescription = function() {
     n.innerHTML = '';
     n.innerHTML = data.n;
   }
+  if(this.classList.contains('aaron')) {
+    p.innerHTML = data.aaron;
+    var n = document.querySelector('#n');
+    n.innerHTML = '';
+    n.innerHTML = data.n;
+  }
   if(this.classList.contains('hardLife')) {
     p.innerHTML = data.hardLife;
     var n = document.querySelector('#n');
