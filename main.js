@@ -1,5 +1,6 @@
 var data = {
-  "killing": "1. Pharaoh ordered Israelites to kill all male babies that were born. Exodus 1:15-16"+"\n"+"2. Pharaoh charged his people to thrown every boy that is born into the Nile. Exodus 1:22 (can combine with #1)",
+  "killing": "1. Pharaoh ordered Israelites to kill all male babies that were born. Exodus 1:15-16",
+  "nile" : "2. Pharaoh charged his people to thrown every boy that is born into the Nile. Exodus 1:22 (can combine with #1)",
   "moses": "3. Levi woman placed the child in a basket and into the Nile. Exodus 2:3",
   "found": "4. Daughter of Pharaoh found the baby and made the baby her son. Exodus 2:5-10",
   "striking": "5. Moses killed an Egyptian and fled from Pharaoh. Exodus 2:11-15",
@@ -14,6 +15,7 @@ var showDescription = function() {
   var p = document.querySelector('#data');
   if(this.classList.contains('killing')) {
     p.innerHTML = data.killing;
+    p.innerHTML = data.nile;
   }
   if(this.classList.contains('moses')) {
     p.innerHTML = data.moses;
